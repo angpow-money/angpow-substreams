@@ -1,0 +1,79 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+package contract.v1;
+message Events {
+    repeated Angpao_AngpowCreated angpao_angpow_createds = 1;
+    repeated Angpao_AngpowReceived angpao_angpow_receiveds = 2;
+    repeated Angpao_Initialized angpao_initializeds = 3;
+    repeated Angpao_OwnershipTransferred angpao_ownership_transferreds = 4;
+    repeated Angpao_RoleAdminChanged angpao_role_admin_changeds = 5;
+    repeated Angpao_RoleGranted angpao_role_granteds = 6;
+    repeated Angpao_RoleRevoked angpao_role_revokeds = 7;
+}
+message Angpao_AngpowCreated {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes donator = 5;
+    string id = 6;
+    bytes token = 7;
+    string token_amount = 8;
+    string quantity = 9;
+}
+message Angpao_AngpowReceived {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes recipient = 5;
+    string id = 6;
+    bytes token = 7;
+    string token_amount = 8;
+    string index = 9;
+}
+message Angpao_Initialized {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    uint64 version = 5;
+}
+message Angpao_OwnershipTransferred {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_owner = 5;
+    bytes new_owner = 6;
+}
+message Angpao_RoleAdminChanged {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes role = 5;
+    bytes previous_admin_role = 6;
+    bytes new_admin_role = 7;
+}
+message Angpao_RoleGranted {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes role = 5;
+    bytes account = 6;
+    bytes sender = 7;
+}
+message Angpao_RoleRevoked {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes role = 5;
+    bytes account = 6;
+    bytes sender = 7;
+}
+  

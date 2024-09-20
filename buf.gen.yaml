@@ -1,0 +1,12 @@
+
+version: v1
+plugins:
+- plugin: buf.build/community/neoeinstein-prost:v0.2.2
+  out: /home/nnnyykk/repo/ruilabs/angpow-substreams/src/pb
+  opt:
+    - file_descriptor_set=false
+
+- plugin: buf.build/community/neoeinstein-prost-crate:v0.3.1
+  out: /home/nnnyykk/repo/ruilabs/angpow-substreams/src/pb
+  opt:
+    - no_features
