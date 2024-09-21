@@ -21,8 +21,9 @@ modules:
 
   - name: map_events
     kind: map
-    initialBlock: 82535466
+    initialBlock: 82660864
     inputs:
       - source: sf.ethereum.type.v2.Block
     output:
       type: proto:contract.v1.Events
+network: sepolia

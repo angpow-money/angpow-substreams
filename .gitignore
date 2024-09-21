@@ -11,3 +11,5 @@ sink-data/
 *.spkg./.substreams.env
 
 replay.log
+
+# Added by substreams init*.spkg

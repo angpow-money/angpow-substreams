@@ -13,7 +13,7 @@ use substreams::scalar::BigDecimal;
 
 substreams_ethereum::init!();
 
-const ANGPAO_TRACKED_CONTRACT: [u8; 20] = hex!("353fcb9fe729a892e9716fcc142262d7635dff6f");
+const ANGPAO_TRACKED_CONTRACT: [u8; 20] = hex!("25a25506B36626d328B1ebE0D16aEF2d3713CE91");
 
 fn map_angpao_events(blk: &eth::Block, events: &mut contract::Events) {
     events.angpao_angpow_createds.append(&mut blk

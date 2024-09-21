@@ -13,7 +13,7 @@ substreams gui
 ## Modules
 
 All of these modules produce data filtered by these contracts:
-- _angpao_ at **0x353fcb9fe729a892e9716fcc142262d7635dff6f**
+- _angpao_ at **0x25a25506B36626d328B1ebE0D16aEF2d3713CE91**
 ### `map_events`
 
 This module gets you only events that matched.

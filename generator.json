@@ -552,8 +552,8 @@
           }
         ],
         "Abi": {},
-        "address": "0x353fcb9fe729a892e9716fcc142262d7635dff6f",
-        "initialBlock": 82535466,
+        "address": "0x25a25506B36626d328B1ebE0D16aEF2d3713CE91",
+        "initialBlock": 82660864,
         "trackFactory": false,
         "factoryCreationEvent": "",
         "factoryCreationEventFieldIdx": null
